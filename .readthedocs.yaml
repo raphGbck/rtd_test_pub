@@ -1,3 +1,9 @@
+python:
+  # Install our python package before building the docs
+  install:
+    - method: pip
+      path: .
+
 version: 2
 
 build:
@@ -5,11 +11,6 @@ build:
   tools:
     python: "3.8"
     
-Sphinx:
+sphinx:
   fail_on_warning: true
 
-python:
-  # Install our python package before building the docs
-  install:
-    - method: pip
-      path: .
